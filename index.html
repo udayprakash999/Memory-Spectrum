@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Spectrum</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="color-wheel.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Memory Spectrum</h1>
+    <div class="info">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="timer">60</span> seconds</p>
+    </div>
+    <div class="game-board" id="game-board"></div>
+    <button id="restart">Restart Game</button>
+  </div>
+
+  <!-- Trophy Modal -->
+  <div id="trophy-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Congratulations!</h2>
+      <p>You matched all the pairs!</p>
+      <div class="trophy">🏆</div>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <!-- Lose Modal -->
+  <div id="lose-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Better Luck Next Time!</h2>
+      <p>You didn't match all the pairs in time. Try again!</p>
+      <button id="close-lose-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
